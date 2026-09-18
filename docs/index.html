@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Indian Tech Job Market Analysis & Hiring Trends</title>
+    <meta charset="UTF-8">
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0 auto; max-width: 900px; padding: 40px 20px; background: #f7fafc; color: #2d3748; }
+        h1 { color: #2b6cb0; }
+        h2 { color: #2d3748; margin-top: 50px; border-bottom: 2px solid #e2e8f0; padding-bottom: 8px; }
+        .stats { display: flex; gap: 20px; margin-top: 20px; flex-wrap: wrap; }
+        .stat-box {
+            background: white; padding: 20px 30px; border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1); text-align: center; flex: 1; min-width: 150px;
+        }
+        .stat-box h3 { margin: 0; font-size: 26px; color: #2b6cb0; }
+        .stat-box p { margin: 5px 0 0; color: #555; }
+        .chart { background: white; padding: 15px; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); margin-top: 20px; }
+        .chart img { max-width: 100%; display: block; margin: 0 auto; }
+        footer { margin-top: 60px; color: #718096; font-size: 14px; text-align: center; }
+        a { color: #2b6cb0; }
+    </style>
+</head>
+<body>
+    <h1>Indian Tech Job Market Analysis & Hiring Trends</h1>
+    <p>An end-to-end data engineering pipeline analyzing 23,201 tech job postings across India —
+       ingestion, cleaning, normalization, SQL analysis, and visualization.
+       <a href="https://github.com/Pratibha-Gaur/indian-tech-hiring-pipeline">View the full project on GitHub →</a></p>
+
+    <h2>Overview</h2>
+    <div class="stats">
+        <div class="stat-box"><h3>23,201</h3><p>Job Postings</p></div>
+        <div class="stat-box"><h3>6,944</h3><p>Companies</p></div>
+        <div class="stat-box"><h3>10,632</h3><p>Unique Skills</p></div>
+        <div class="stat-box"><h3>₹15.55 LPA</h3><p>Avg. Disclosed Salary</p></div>
+    </div>
+
+    <h2>Most In-Demand Skills</h2>
+    <div class="chart"><img src="top_skills.png" alt="Top Skills"></div>
+
+    <h2>Top Hiring Cities</h2>
+    <div class="chart"><img src="top_cities.png" alt="Top Cities"></div>
+
+    <h2>Salary by Role Category</h2>
+    <div class="chart"><img src="salary_by_role.png" alt="Salary by Role"></div>
+    <p style="font-size: 14px; color: #718096;">Note: sample sizes (n=) are shown above each bar — smaller samples are less statistically reliable.</p>
+
+    <h2>Work Mode Distribution</h2>
+    <div class="chart"><img src="work_mode.png" alt="Work Mode"></div>
+
+    <h2>Hiring Volume Trend</h2>
+    <div class="chart"><img src="hiring_trend.png" alt="Hiring Trend"></div>
+    <p style="font-size: 14px; color: #718096;">Note: dataset covers a ~2-month scraping window (May–June 2025), not a full year.</p>
+
+    <footer>
+        Built by Pratibha Gaur — Data Engineering Portfolio Project<br>
+        <a href="https://github.com/Pratibha-Gaur/indian-tech-hiring-pipeline">GitHub Repository</a>
+    </footer>
+</body>
+</html>
